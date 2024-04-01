@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        <h2 class = "bg-success text-white" style="text-align: center; ">Form Data</h2>
+       
+        
+         <ul class="list-group">
+            <li  id="username"  class="list-group-item disabled text-primary"></li>
+            <li id="email" class="list-group-item text-light bg-dark""></li>
+            <li id="dob" class="list-group-item text-dark"></li>
+            <li id="gender" class="list-group-item  "></li>
+            <li id="phone" class="list-group-item text-white bg-primary "></li>
+          </ul>
+
+
+        
+   
+  <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const formData = JSON.parse(localStorage.getItem("formData"));
+            if (formData) {
+                document.getElementById("username").innerText = "Username: " + formData.username;
+                document.getElementById("email").innerText = "Email: " + formData.email;
+                document.getElementById("dob").innerText = "D.O.B: " + formData.dob;
+                document.getElementById("gender").innerText = "Gender: " + formData.gender;   
+                document.getElementById("phone").innerText = "Phone: " + formData.phone;   
+
+            }
+        });
+  
+        </script>
+    </div>
+    
+</body>
+</html>

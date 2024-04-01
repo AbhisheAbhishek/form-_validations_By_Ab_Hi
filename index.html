@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <div class="container">
+        <div class="column1">
+<form action="" class="form" id="form">
+   
+    <div class="form-control">
+        <label for="username">username:</label>
+        <input type="text" id="username" placeholder="Enetr username">
+        <small>error</small>
+    </div>
+    <div class="form-control">
+        <label for="email">email:</label>
+        <input type="email" id="email" placeholder="Enetr email">
+        <small>error</small>
+    </div>
+
+    <div class="form-control">
+        <label for="dob">D.O.B</label>
+        <input type="date" id="date" name="dob" placeholder="dd/mm//yy">
+        <small>error</small>
+    </div>
+
+
+    <div class="form-control">
+        <label>Gender:</label>  
+    <select  name="gender" id="gender" placeholder="select">
+        <option value="choose">choose</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+        <small>error</small>
+    </div>
+    
+    <div class="form-control">
+        <label for="phone">Phone Number</label>
+        <input type="number" id="phone" placeholder="+91 enter phone number">
+        <small>error</small>
+    </div>
+  
+
+    <div class="form-control">
+        <label for="password">password:</label>
+        <input type="password" id="password" placeholder="Enetr password">
+        <small>error</small>
+    </div>
+    <div class="form-control">
+        <label for="password">confirm password:</label>
+        <input type="password" id="password2" placeholder="confirm password ">
+        <small>error</small>
+    </div>
+
+    <div class="form-control">
+        <label for="otp">Generate and verify the otp</label>
+       <input type="otp"  id = "otp" placeholder="enter valid otp">
+       <small>error</small>
+     <div class="divOtp">
+       <button id="send" class="same" >Send otp</button>
+     <h2 id="hh2"></h2>
+    </div>
+    </div>
+ 
+        <button id="submit">Submit</button>
+ 
+    
+</form>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
